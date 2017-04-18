@@ -92,7 +92,7 @@ def generate_data(send_batch, batch_size, resources_count,
                 resources_list.append(r)
     print len(resources_list)
 
-    # Uncomment this if you don't need to use predefined list of resources from file
+    # !!! Uncomment this if you don't need to use predefined list of resources from file !!!
     '''resources_list = [str(uuid.uuid4())
                       for _ in xrange(resources_count)]'''
     meters_list = ['test_meter_' + str(i) for i in range(meters_count)]
@@ -231,4 +231,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
