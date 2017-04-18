@@ -4,7 +4,8 @@
 This script is intended to test certain part (RMQ\Kafka or Heka\Hindsight) of Ceilometer infra. 
 
 It puts data samples into the 'metering.sample' topic.
-This topic is used for publishing of transformed messages from OpenStack and Compute services. Heka\Hindsight reads messages from 'metering.sample' and puts them into storage backend (MCP uses InfluxDB at the moment).
+This topic is used for publishing of transformed messages from OpenStack and Compute services.
+Heka\Hindsight reads messages from 'metering.sample' and puts them into storage backend (MCP uses InfluxDB at the moment).
 See [MOS 9 Telemetry plugin description](https://3a98d2877cb62a6e6b14-93babe93196056fe375611ed4c1716dd.ssl.cf5.rackcdn.com/Telemetry-1.0-1.0.1-1/OpenStackTelemetry.pdf) for more details.
 
 By default script uses ceilometer config file [/etc/ceilometer/ceilometer.conf] on host which runs at. In this case it uses the same connection parameters as Ceilometer components use.
